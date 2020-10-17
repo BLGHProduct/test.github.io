@@ -1,0 +1,137 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+p{
+    text-align: center;
+}
+
+body{
+    
+    background-image: url(Hatter1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.menu-bar {
+    background-color: rgb(0,100,0);
+    text-align: left;
+    border-top: 30px;
+}
+
+.box{
+    text-align:center;
+    position:relative;
+    top: 100px;
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+ }
+    
+.menu-bar ul li{
+    width: 210px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu-bar ul li a {
+        padding-right: 20px;
+        text-decoration: none;
+        color: #fff;
+        padding-bottom: 10px;
+}
+
+.menu-bar ul li, .menu-bar ul li a {
+        padding-left:14px;
+        text-align: center;
+}
+
+
+.right {
+        text-align: center;
+}
+
+.active, .menu-bar ul li:hover {
+   background: #2bab0d;
+   border-radius: 8px;
+}
+
+.menu-bar .fa{
+    margin-right: 8px;
+}
+
+/*Submenu starting point*/
+
+.sub-menu-1{
+    display: none;
+    border-radius: 8px;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 10px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin: 10px;
+}
+    
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 180px;
+    margin:10px;
+    border-bottom:1px  groove #fff;
+    background: transparent;
+    border-radius: 1px;
+    text-align: center;
+}
+
+   
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom:none;
+}
+    
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: lawngreen;
+}
+.fa-angle-right{
+    float:right;
+}
+
+/*Iskola submenu*/
+
+.sub-menu-2{
+    display: none;
+    border-radius:8px;
+}
+
+.Hover-me:hover .sub-menu-2{
+    position:absolute;
+    display:block;
+    margin-top:-30px;
+    margin-left: 160px;
+    background: rgb(0,100,0)
+}
+
+#holder{
+    height:auto;
+    width: 500px;
+    position: relative;
+}
+#top{
+    height: 30px;
+    width:500px;
+}
+
+#bottom {
+    height: 30px;
+    width: 248px;
+}
